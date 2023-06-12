@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Poppins';
+    transition: 0.8s;
+}
+
+.portfolio .row .items .card {
+    transform: scale(0.9);
+    filter: brightness(0.9);
+}
+
+.portfolio .row .items .card:hover {
+    transform: scale(1);
+    filter: brightness(1);
+}
+
+@media only screen and (max-width: 430px) {
+    .portfolio .row .items img {
+        height: 160px!important;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .portfolio .row .items img {
+        height: 260px!important;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .members .carousel-inner .carousel-item img {
+        width: 100px!important;
+        height: 100px!important;
+    }
+}
+
+.animate__animated {
+    animation: zoomIn;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s;
+    /* don't forget to set a duration! */
+}
+
+.home .animate__animated {
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
